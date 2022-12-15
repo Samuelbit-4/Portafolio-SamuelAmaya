@@ -1,0 +1,56 @@
+/*LISTO*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $backgroundNav;
+    width: 100%;
+    height: 25vh;
+    z-index: 1000;
+    ul{
+        width: 50%;
+        display: flex;
+        gap: 3%;
+        justify-content: space-around;
+        li{
+            list-style: none; 
+            padding: 2%;
+            a{
+                text-decoration: none;
+                color: white;
+                
+            }
+            a:hover{
+                color: $colorHover;
+                transition: 0.2s all;
+            }
+        }
+        
+        li:last-of-type{
+            list-style: none;
+            
+            a{
+                text-decoration: none;
+                color: black;
+                border-radius: 25px;
+                background-color: white;
+                padding: 20%;
+                &:hover{
+                    background-color: $colorHover;
+                    transition: 0.2s all;
+                }
+            }
+        }
+    }
+    .inicio{
+        font-size: 2.5em;
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        padding-left: 5%;
+        &:hover{
+            color: $colorHover
+        }
+    }
+}
+/*LISTO*/

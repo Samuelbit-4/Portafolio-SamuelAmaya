@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+body {
+  background-color: #131313;
+}
+
+/*LISTO*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131313;
+  width: 100%;
+  height: 25vh;
+  z-index: 1000;
+}
+header ul {
+  width: 50%;
+  display: flex;
+  gap: 3%;
+  justify-content: space-around;
+}
+header ul li {
+  list-style: none;
+  padding: 2%;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+header ul li a:hover {
+  color: #898989;
+  transition: 0.2s all;
+}
+header ul li:last-of-type {
+  list-style: none;
+}
+header ul li:last-of-type a {
+  text-decoration: none;
+  color: black;
+  border-radius: 25px;
+  background-color: white;
+  padding: 20%;
+}
+header ul li:last-of-type a:hover {
+  background-color: #898989;
+  transition: 0.2s all;
+}
+header .inicio {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  padding-left: 5%;
+}
+header .inicio:hover {
+  color: #898989;
+}
+
+/*LISTO*/
+main .presentation {
+  display: flex;
+  width: 100%;
+  height: 73vh;
+  margin-top: 2%;
+  padding: 3%;
+  align-items: center;
+}
+main .presentation-text {
+  width: 40%;
+  padding: 0px 0px 0px 5%;
+  text-align: left;
+}
+main .presentation-text h1:first-child {
+  font-weight: bolder;
+  font-size: 2em;
+  color: white;
+}
+main .presentation-text h1:last-child {
+  color: #898989;
+}
+main .about {
+  margin: 5% 5% 0px 5%;
+}
+main .about-me {
+  display: flex;
+}
+main .about-me__img {
+  border-radius: 12px 0px 12px 0px;
+  width: 50%;
+  height: 100%;
+}
+main .about-me__img__me {
+  width: 100%;
+}
+main .about-me__img__me img {
+  border-radius: 25% 0px 0px 25%;
+  width: 100%;
+  height: 80vh;
+}
+main .about-me__description {
+  background-color: white;
+  height: 80vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 10% 10% 0px;
+}
+main .about-me__description h1 {
+  font-size: 3em;
+  padding: 2%;
+}
+main .about-me__description p {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0px 5% 0px 5%;
+  color: rgb(13, 125, 216);
+}
+main .about-school {
+  margin-top: 2%;
+}
+main .about-school h1:first-of-type {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+main .about-school .container {
+  display: flex;
+}
+main .about-school .container-img {
+  width: 50%;
+}
+main .about-school .container-img img {
+  width: 100%;
+}
+main .about-school .container-description {
+  width: 50%;
+  text-align: right;
+}
+main .about-school .container-description h2 {
+  padding: 2%;
+  color: white;
+  font-size: 2em;
+}
+main .about-school .container-description h3 {
+  padding: 0.5% 2%;
+  color: #898989;
+  font-size: 1.8em;
+}
+main .about-school .container-description p {
+  padding: 0.5% 2%;
+  color: white;
+  font-size: 1.3em;
+}
+main .about-hobbies {
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+  height: auto;
+}
+main .about-hobbies__img {
+  background-color: #898989;
+  border-radius: 25% 0px 0px 25%;
+  width: 50%;
+}
+main .about-hobbies__description {
+  background-color: white;
+  border-radius: 0px 10% 10% 0px;
+  text-align: center;
+  color: black;
+  padding: 2%;
+}
+main .about-hobbies__description h1 {
+  font-size: 3em;
+  padding: 1%;
+}
+main .about-hobbies__description h3 {
+  text-align: left;
+  font-size: 2em;
+  padding: 1%;
+}
+main .about-hobbies__description p {
+  text-align: left;
+  font-size: 1.5em;
+  color: rgb(13, 125, 216);
+  padding: 1% 2%;
+}
+main .projects {
+  background-color: #dce0e6;
+  margin: 5% 5%;
+  border-radius: 10%;
+}
+main .projects-title {
+  font-size: 3em;
+  text-align: center;
+  padding: 2%;
+}
+main .projects-subtitle {
+  font-size: 1.8em;
+  color: #898989;
+  text-align: center;
+  padding: 0px 0px 2%;
+}
+main .projects .container-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+main .projects .container-tech .row {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  margin: 0px 10%;
+  border-radius: 12px;
+  padding: 2%;
+  height: auto;
+  margin-bottom: 2%;
+}
+main .projects .container-tech .row .column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 2%;
+}
+main .projects .container-tech .row .column img {
+  width: 20%;
+}
+main .projects .container-tech .row .column h3:last-of-type {
+  margin-bottom: 5%;
+}
+main .projects .container-tech .row .column a {
+  text-decoration: none;
+  color: black;
+  border-radius: 25px;
+  background-color: white;
+  margin-top: 2%;
+  padding: 2%;
+  border: 1px solid black;
+}
+main .projects .container-tech .row .column a:hover {
+  color: white;
+  background-color: black;
+  transition: 0.2s all;
+}
+main .projects .container-tech .row .color-2 {
+  background-color: #dce0e6;
+  border-radius: 12px;
+  margin-right: 3%;
+  box-shadow: 5px 6px 19px black;
+}
+main .projects .container-tech .row .color-1 {
+  background-color: #cacaca;
+  border-radius: 12px;
+  margin-right: 3%;
+  box-shadow: 5px 6px 19px black;
+}
+main .projects .container-tech .container-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  flex-grow: 2;
+}
+main .projects .container-tech .container-5 .w-100 {
+  width: 100%;
+}
+main .projects .container-tech .wrap {
+  flex-wrap: wrap;
+}
+main .projects .container-tech .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2%;
+}
+main .projects .container-tech .w-100 {
+  width: 100%;
+}
+main .projects .container-tech .column-100 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2%;
+}
+main .projects .container-tech .column-100 img {
+  width: 20%;
+}
+main .projects .container-tech .column-100 img {
+  width: 20%;
+}
+main .projects .container-tech .column-100 a {
+  text-decoration: none;
+  color: black;
+  border-radius: 25px;
+  background-color: white;
+  margin-top: 2%;
+  padding: 2%;
+  border: 1px solid black;
+}
+main .projects .container-tech .column-100 a:hover {
+  color: white;
+  background-color: black;
+  transition: 0.2s all;
+}
+
+footer {
+  background-color: #7c7c7c;
+  border-top: 1px solid rgb(221, 221, 221);
+  height: 35vh;
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #131313;
+  font-family: "Signika", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

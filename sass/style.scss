@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $backgroundBody;
+    font-family: $fontFamily;
+}

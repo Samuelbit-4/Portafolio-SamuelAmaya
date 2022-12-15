@@ -1,0 +1,8 @@
+footer{
+    background-color:adjust-hue($color: rgb(124, 124, 124), $degrees: 2);
+    border-top: 1px solid rgb(221, 221, 221);
+    height: 35vh;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}

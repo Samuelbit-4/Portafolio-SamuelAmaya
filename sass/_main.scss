@@ -1,0 +1,285 @@
+@mixin colorCard($color) {
+    background-color: $color;
+    border-radius: 12px;
+    margin-right: 3%;
+    box-shadow: 5px 6px 19px black;
+}
+
+@mixin columnCard($width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: $width;
+    padding: 2%;
+    img {
+        width: 20%;
+    }
+}
+@mixin button($color){
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    background-color: white;
+    margin-top: 2%;
+    padding: 2%;
+    border: 1px solid $color;
+    &:hover {
+        color: white;
+        background-color: $color;
+        transition: 0.2s all;
+    }
+}
+
+main {
+    .presentation {
+        display: flex;
+        width: 100%;
+        height: 73vh;
+        margin-top: 2%;
+        padding: 3%;
+        align-items: center;
+
+        &-text {
+            width: 40%;
+            padding: 0px 0px 0px 5%;
+            text-align: left;
+
+            & h1:first-child {
+                font-weight: bolder;
+                font-size: 2em;
+                color: white;
+            }
+
+            & h1:last-child {
+                color: $colorHover;
+            }
+        }
+    }
+
+    .about {
+        // height: 80vh;
+
+        margin: 5% 5% 0px 5%;
+
+        &-me {
+            display: flex;
+
+            &__img {
+                border-radius: 12px 0px 12px 0px;
+                width: 50%;
+                height: 100%;
+
+                &__me {
+                    width: 100%;
+
+                    img {
+                        border-radius: 25% 0px 0px 25%;
+                        width: 100%;
+                        height: 80vh;
+                    }
+                }
+            }
+
+            &__description {
+                background-color: white;
+                height: 80vh;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0px 10% 10% 0px;
+
+                h1 {
+                    font-size: 3em;
+                    padding: 2%;
+                }
+
+                p {
+                    font-size: 1.5em;
+                    text-align: center;
+                    padding: 0px 5% 0px 5%;
+                    color: rgb(13, 125, 216);
+                }
+            }
+        }
+
+        &-school {
+            margin-top: 2%;
+
+            h1:first-of-type {
+                font-size: 3em;
+                color: white;
+                text-align: center;
+                padding: 2%;
+            }
+
+            .container {
+                display: flex;
+
+                &-img {
+                    width: 50%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &-description {
+                    width: 50%;
+                    text-align: right;
+
+                    h2 {
+                        padding: 2%;
+                        color: white;
+                        font-size: 2em;
+                    }
+
+                    h3 {
+                        padding: 0.5% 2%;
+                        color: $colorHover;
+                        font-size: 1.8em;
+                    }
+
+                    p {
+                        padding: 0.5% 2%;
+                        color: white;
+                        font-size: 1.3em;
+                    }
+
+                }
+            }
+        }
+
+        &-hobbies {
+            display: flex;
+            width: 100%;
+            margin-top: 5%;
+            height: auto;
+
+            &__img {
+                background-color: $colorHover;
+                border-radius: 25% 0px 0px 25%;
+                width: 50%;
+
+            }
+
+            &__description {
+                background-color: white;
+                border-radius: 0px 10% 10% 0px;
+                text-align: center;
+                color: black;
+                padding: 2%;
+
+                h1 {
+                    font-size: 3em;
+                    padding: 1%;
+                }
+
+                h3 {
+                    text-align: left;
+                    font-size: 2em;
+                    padding: 1%;
+                }
+
+                p {
+                    text-align: left;
+                    font-size: 1.5em;
+                    color: rgb(13, 125, 216);
+                    padding: 1% 2%;
+                }
+            }
+        }
+    }
+
+    .projects {
+        background-color: #dce0e6;
+        margin: 5% 5%;
+        border-radius: 10%;
+        &-title{
+            font-size: 3em;
+            text-align: center;
+            padding: 2%;
+        }
+        &-subtitle{
+            font-size: 1.8em;
+            color: $colorHover;
+            text-align: center;
+            padding: 0px 0px 2%;
+        }
+        .container-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2%;
+
+            .row {
+                width: 100%;
+                display: flex;
+                background-color: white;
+                margin: 0px 10%;
+                border-radius: 12px;
+                padding: 2%;
+                height: auto;
+                margin-bottom: 2%;
+                .column {
+                    @include columnCard(50%)
+                }
+
+                .column h3:last-of-type {
+                    margin-bottom: 5%;
+                }
+
+                .column a {
+                    @include button(black)
+                }
+
+                .color-2 {
+                    @include colorCard(#dce0e6);
+                }
+
+                .color-1 {
+                    @include colorCard(#cacaca);
+                }
+            }
+
+            .container-5 {
+                // width: 60%;
+                display: flex;
+                flex-direction: column;
+                gap: 2%;
+                flex-grow: 2;
+
+                .w-100 {
+                    width: 100%;
+                }
+            }
+
+            .wrap {
+                flex-wrap: wrap;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2%;
+            }
+
+            .w-100 {
+                width: 100%;
+            }
+
+            .column-100 {
+                @include columnCard(100%);
+
+                img {
+                    width: 20%;
+                }
+                a{
+                    @include button(black)
+                }
+            }
+        }
+    }
+}
