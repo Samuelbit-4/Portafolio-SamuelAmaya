@@ -4,6 +4,11 @@ $backgroundNav: #131313;
 $colorHover: #898989;
 $fontFamily : 'Signika', sans-serif;
 $baackgroundFooter: #686767;
+$breakpointTablet: 1024px;
+$breakpointCell: 425px;
 body {
   background-color: $backgroundBody;
+}
+.material-symbols-outlined{
+  visibility: hidden;
 }

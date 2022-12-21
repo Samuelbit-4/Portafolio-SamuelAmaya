@@ -1,0 +1,161 @@
+@media screen and (max-width: $breakpointCell) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $backgroundNav;
+        width: 100%;
+        height: 10vh;
+        z-index: 1000;
+        flex-wrap: wrap;
+        .inicio {
+            font-size: 1.2em;
+            padding-left: 2%;
+            width: 80%;
+        }
+        ul{
+            visibility: hidden;
+            display: block;
+            width: 100%;
+            position: relative;
+            background-color: $colorHover;
+           li{
+            width: 100%;
+            text-align: center;
+            a{
+                text-align: center;
+            }
+            &:last-of-type a{
+                padding: 0;
+            } 
+           }
+           
+        }
+        .material-symbols-outlined{
+            visibility:visible;
+            color: white;
+            cursor: pointer;
+            padding: 5%;
+            font-size: 2em;
+            width: 20%;
+        }
+    }
+    main{
+        .presentation{
+            flex-direction: column;
+            height: 100vh;
+            img{
+                width: 100%;
+                height: 50%;
+            }
+            &-text{
+                width: 100%;
+                height: 50%;
+                font-size: 1em;
+                text-align: center;
+            }
+        }
+        .about{
+            &-me{
+                flex-direction: column;
+                height: 100vh;
+                background-color: white;
+                &__img{
+                    width: 100%;
+                    margin-bottom: 0;
+                   
+                    &__me{
+                        img{
+                            width: 100%;
+                            height: 50%;
+                            border-radius: 0%;
+                        }
+                    }
+                }
+                &__description{
+                    display: block;
+                    width: 100%;
+                    height: 50%;
+                    margin: 0;
+                    h1{
+                        font-size: 2em;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 1em;
+                    }
+                }
+
+            }
+            &-hobbies{
+                flex-direction: column;
+                border-radius: 0%;
+                height: 120vh;
+                &__img{
+                    width: 100%;
+                    height: 50%;
+                    border-radius: 0;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &__description{
+                    height: 70%;
+                    border-radius: 0;
+                    h1{
+                        font-size: 2em;
+                    }
+                    &> div > h3{
+                        font-size: 1.2em;
+                    }
+                    &> div > p{
+                        font-size: 1em;
+                    }
+                }
+            }
+            &-school{
+                h1:first-of-type{
+                    font-size: 2.5em;
+                }
+                .container{
+                    display: block;
+                    .container-img{
+                        width: 90%;
+                        
+                    }
+                    &-description{
+                        width: 100%;
+                    }
+                }
+            }          
+        }
+        .projects{
+            border-radius: 0;
+            &-title{
+                font-size: 2em;
+            }
+            &-subtitle{
+                font-size: 1.7em;
+            }
+        }      
+    }
+    .row:first-child{
+        flex-direction: column;
+        height: 100vh !important;
+        gap: 5%;
+    }
+    .row:last-child{
+        flex-direction: column;
+        height: 125vh !important;
+        gap: 5%;
+    }
+    .column{
+        width: 100% !important;
+    }
+    .row-grid{
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+}
