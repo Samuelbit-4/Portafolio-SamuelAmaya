@@ -13,3 +13,15 @@ btnMenu.addEventListener("click", (e) => {
       contador = 0;
     }
 });
+window.scroll({
+  top: offsetTop,
+  behavior: "smooth"
+})
+
+const scrolling = (scroll) =>{
+
+}
+
+window.addEventListener("scroll", e =>{
+  
+})

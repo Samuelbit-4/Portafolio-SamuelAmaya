@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
+  "scripts": {
+    "sass": "sass --watch sass:css"
+  }
+}

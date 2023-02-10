@@ -12,13 +12,4 @@
 body{
     background-color: $backgroundBody;
     font-family: $fontFamily;
-    animation: entrada 1s;
-}
-@keyframes entrada {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }

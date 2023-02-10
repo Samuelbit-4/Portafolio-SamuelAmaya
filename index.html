@@ -7,24 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/mixin.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>SamuelAmaya</title>
 </head>
 
-<body>
+<body class="animate__animated animate__fadeInLeft">
     <header>
         <a href="" class="inicio">SamuelAmaya</a>
         <span class="material-symbols-outlined">
             menu
-            </span>
+        </span>
         <ul>
             <li><a href="">SOBRE MÍ</a></li>
             <li><a href="">MIS PROYECTOS</a></li>
             <li><a href="">CONTACTO</a></li>
         </ul>
-        
+
     </header>
-    <main>
+    <main class="animate__fadeInDown">
         <section class="presentation">
             <img src="./img/section1.png" alt="" class="presentation-img">
             <div class="presentation-text">
@@ -105,91 +107,107 @@
             </div>
         </section>
         <section class="projects">
-            <h1 class="projects-title">Mis proyectos</h1>
+            <div class="projects-title">
+                <h1>TECNOLOGIAS</h1>
+            </div>
             <div>
-                <h1 class="projects-subtitle">Tecnologías que conozco</h1>
-                <div class="container-tech">
-                    <div class="row">
-                        <h1 class="projects-subtitle">Lenguajes de Alto Nivel...</h1>
-                        <div class="column color-2">
-                            <img src="./img/java.png" alt="">
-                            <h1>Java</h1>
-                            <h3>Lenguaje Orientado a Objetos</h3>
-                            <h3>Nivel: Básico</h3>
-                            <h3>Diseño de Interfaces Graficas con Swing, POO, Acceso a datos</h3>
-                            <a href="">Proyectos en GitHub</a>
-                        </div>
-                        <div class="column color-1">
-                            <img src="./img/mysql.png" alt="">
-                            <h1>SQL - MySQL</h1>
-                            <h3>Lenguaje de datos</h3>
-                            <h3>Nivel: Básico</h3>
-                            <h3>Consultas, inserción de datos, alter table</h3>
-                            <a href="">Proyectos en GitHub</a>
-                        </div>
+                <img src="./img/html.png" alt="">
+            </div>
+            <div>
+                <img src="./img/css.png" alt="">
+            </div>
+            <div><img src="./img/bootstrap.png" alt=""></div>
+            <div class="break">
+                <img src="./img/Sass.png" alt="">
+            </div>
+            <div>
+                <img src="./img/javascript.png" alt="">
+            </div>
+            <div>
+                <img src="./img/react.png" alt="">
+            </div>
+            <div>
+                <img src="./img/java.png" alt="">
+            </div>
+            <div>
+                <img src="./img/mysql.png" alt="" class="break">
+            </div>
+        </section>
+        <section class="carrete-projects">
+            <div class="carrete-projects-title">
+                <h1>CARRETE DE PROYECTOS</h1>
+            </div>
+            <div class="carrete-projects-card">
+                <div class="card">
+                    <div>
+                        <img src="./img/jquery.png" alt="">
                     </div>
-                    <div class="row-grid w-100">
-                        <h1 class="projects-subtitle g-column g-row">Para diseñar...</h1>
-                        <div class="column-100 color-2 g-row">
-                            <div>
-                                <img src="./img/html.png" alt="">
-                                <h1>HTML</h1>
-                                <h3>HyperText Markup Language</h3>
-                                <h3>Nivel: Intermedio</h3>
-                                <h3>Etiquetas</h3>
-                            </div>
-                            <br>
-                            <div>
-                                <img src="./img/css.png" alt="">
-                                <h1>CSS</h1>
-                                <h3>Cascading StyleSheet</h3>
-                                <h3>Nivel: Intermedio</h3>
-                                <h3>Colors, Box-content, Flex, Grid, Web Responsive</h3>
-                            </div>
-                            <a href="">Proyectos en GitHub</a>
-                        </div>
-
-                        <div class="column-100 color-1">
-                            <img src="./img/bootstrap.png" alt="" width="200">
-                            <h1>Bootstrap 5</h1>
-                            <h3>Libreria de CSS</h3>
-                            <h3>Nivel: Básico</h3>
-                            <h3>Containers, Flex, Buttons, Modals, Grid</h3>
-                            <a href="">Proyectos en GitHub</a>
-                        </div>
-                        <div class="column-100 color-2">
-                            <img src="./img/Sass.png" alt="">
-                            <h1>SASS</h1>
-                            <h3>Transpilador de CSS</h3>
-                            <h3>Nivel: Básico</h3>
-                            <h3>Mixins, Include</h3>
-                            <a href="">Proyectos en GitHub</a>
-                        </div>
+                    <div>
+                        <h1>Proyecto 1. Consulta de clima</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatum?</p>
                     </div>
-                    <div class="row">
-                        <h1 class="projects-subtitle">Para darle vida...</h1>
-                        <div class="column color-1">
-                            <img src="./img/javascript.png" alt="">
-                            <h1>JavaScript</h1>
-                            <h3>Lenguaje Funcional</h3>
-                            <h3>Nivel: Intermedio</h3>
-                            <h3>Eventos, DOM, Funcionalidad, Consumo de API's</h3>
-                            <a href="">Proyectos en GitHub</a>
-                        </div>
-                        <div class="column color-2">
-                            <img src="./img/jquery.png" alt="">
-                            <h1>jQuery</h1>
-                            <h3>Biblioteca de JavaScript</h3>
-                            <h3>Eventos, Funcionalidad, Consumo de API's</h3>
-                            <a href="">Proyectos en GitHub</a>
-                        </div>
-                        <div class="column color-1">
-                            <img src="./img/react.png" alt="">
-                            <h1>React.js</h1>
-                            <h3>Biblioteca de JavaScript</h3>
-                            <h3>Eventos, Funcionalidad, Consumo de API's</h3>
-                            <a href="">Proyectos en GitHub</a>
-                        </div>
+                    <div>
+                        <button>INGRESAR AL PROYECTO</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./img/jquery.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Proyecto 1. Consulta de clima</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatum?</p>
+                    </div>
+                    <div>
+                        <button>INGRESAR AL PROYECTO</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./img/jquery.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Proyecto 1. Consulta de clima</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatum?</p>
+                    </div>
+                    <div>
+                        <button>INGRESAR AL PROYECTO</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./img/jquery.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Proyecto 1. Consulta de clima</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatum?</p>
+                    </div>
+                    <div>
+                        <button>INGRESAR AL PROYECTO</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./img/jquery.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Proyecto 1. Consulta de clima</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatum?</p>
+                    </div>
+                    <div>
+                        <button>INGRESAR AL PROYECTO</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./img/jquery.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Proyecto 1. Consulta de clima</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatum?</p>
+                    </div>
+                    <div>
+                        <button>INGRESAR AL PROYECTO</button>
                     </div>
                 </div>
             </div>
@@ -210,7 +228,7 @@
         <div>
         </div>
     </footer>
-<script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
