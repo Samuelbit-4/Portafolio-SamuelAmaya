@@ -84,10 +84,15 @@ main .presentation-text h1:last-child {
   color: #898989;
 }
 main .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 5% 5% 0px 5%;
 }
 main .about-me {
   display: flex;
+  width: 60%;
 }
 main .about-me__img {
   border-radius: 12px 0px 12px 0px;
@@ -100,11 +105,11 @@ main .about-me__img__me {
 main .about-me__img__me img {
   border-radius: 25% 0px 0px 25%;
   width: 100%;
-  height: 80vh;
+  height: 50vh;
 }
 main .about-me__description {
   background-color: white;
-  height: 80vh;
+  height: 50vh;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -113,12 +118,13 @@ main .about-me__description {
   border-radius: 0px 10% 10% 0px;
 }
 main .about-me__description h1 {
-  font-size: 3em;
+  font-size: 1.5em;
   padding: 2%;
 }
 main .about-me__description p {
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: center;
+  font-weight: 100;
   padding: 0px 5% 0px 5%;
   color: rgb(13, 125, 216);
 }
@@ -161,14 +167,18 @@ main .about-school .container-description p {
 }
 main .about-hobbies {
   display: flex;
-  width: 100%;
+  width: 70%;
   margin-top: 5%;
-  height: auto;
+  height: min-content;
 }
 main .about-hobbies__img {
   background-color: #898989;
   border-radius: 25% 0px 0px 25%;
-  width: 50%;
+  display: flex;
+  align-items: center;
+}
+main .about-hobbies__img img {
+  width: 300px;
 }
 main .about-hobbies__description {
   background-color: white;
@@ -178,30 +188,34 @@ main .about-hobbies__description {
   padding: 2%;
 }
 main .about-hobbies__description h1 {
-  font-size: 3em;
+  font-size: 1.5em;
   padding: 1%;
 }
 main .about-hobbies__description h3 {
   text-align: left;
-  font-size: 2em;
+  font-size: 1.2em;
   padding: 1%;
 }
 main .about-hobbies__description p {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1em;
   color: rgb(13, 125, 216);
   padding: 1% 2%;
 }
-main .projects {
+main .projects-f {
   display: flex;
-  flex-wrap: wrap;
-  flex: 1 1;
-  justify-content: center;
   align-items: center;
-  gap: 35px;
-  padding: 0 250px;
-  margin: 3% 0;
-  order: 3;
+  justify-content: center;
+}
+main .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content;
+  margin: 10%;
+  justify-items: center;
+  row-gap: 15px;
+  width: 50%;
+  height: 50%;
 }
 main .projects div {
   background: #C9D6FF;
@@ -214,6 +228,7 @@ main .projects div {
   padding: 15px;
 }
 main .projects div.projects-title {
+  grid-column: 1/4;
   width: 100%;
   text-align: center;
   font-size: 2em;
@@ -221,9 +236,6 @@ main .projects div.projects-title {
 main .projects div img {
   width: 100px;
   height: 100px;
-}
-main .projects div.break {
-  margin: 0px 250px;
 }
 main .flex {
   display: flex;
@@ -403,22 +415,28 @@ footer {
   }
   main .presentation {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
   }
   main .presentation img {
-    width: 100%;
-    height: 50%;
+    width: 60%;
+    height: auto;
   }
   main .presentation-text {
     width: 100%;
-    height: 50%;
+    height: 40%;
     font-size: 1em;
     text-align: center;
   }
   main .about-me {
     flex-direction: column;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
     background-color: white;
+    margin-bottom: 10vh;
   }
   main .about-me__img {
     width: 100%;
@@ -434,6 +452,7 @@ footer {
     width: 100%;
     height: 50%;
     margin: 0;
+    padding: 20px 0;
   }
   main .about-me__description h1 {
     font-size: 2em;
@@ -445,7 +464,8 @@ footer {
   main .about-hobbies {
     flex-direction: column;
     border-radius: 0%;
-    height: 120vh;
+    width: 100%;
+    min-height: 100vh;
   }
   main .about-hobbies__img {
     width: 100%;
@@ -480,14 +500,22 @@ footer {
   main .about-school .container-description {
     width: 100%;
   }
+  main .projects-f {
+    display: block;
+  }
   main .projects {
-    border-radius: 0;
+    width: 100%;
+    display: flex;
+    margin: 25px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  main .projects-title {
-    font-size: 2em;
-  }
-  main .projects-subtitle {
-    font-size: 1.7em;
+  main .projects div {
+    width: 45vw;
+    text-align: center;
   }
   .row:first-child {
     flex-direction: column;
@@ -560,8 +588,8 @@ footer {
     height: 90vh;
   }
   main .presentation img {
-    width: 100%;
-    height: 50%;
+    width: 70%;
+    height: auto;
   }
   main .presentation-text {
     width: 100%;
@@ -573,7 +601,7 @@ footer {
     flex-direction: column;
     height: max-content;
     background-color: white;
-    width: 90vw;
+    width: 70vw;
   }
   main .about-me__img {
     width: 100%;
@@ -581,7 +609,7 @@ footer {
   }
   main .about-me__img__me img {
     width: 100%;
-    height: 50%;
+    height: 40%;
     border-radius: 0%;
   }
   main .about-me__description {
@@ -596,12 +624,13 @@ footer {
   }
   main .about-me__description p {
     font-size: 1.5em;
+    padding: 25px 0;
   }
   main .about-hobbies {
     flex-direction: column;
     border-radius: 0%;
-    height: max-content;
-    width: 90vw;
+    min-height: max-content;
+    width: 70vw;
   }
   main .about-hobbies__img {
     width: 100%;
@@ -639,13 +668,8 @@ footer {
     width: 100%;
   }
   main .projects {
-    border-radius: 0;
-  }
-  main .projects-title {
-    font-size: 2em;
-  }
-  main .projects-subtitle {
-    font-size: 1.7em;
+    width: 70%;
+    gap: 25px;
   }
   .row:first-child {
     flex-direction: column;
@@ -665,6 +689,9 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 5%;
+  }
+  footer {
+    height: min-content;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1024px) {
