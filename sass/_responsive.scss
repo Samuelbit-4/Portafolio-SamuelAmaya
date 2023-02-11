@@ -203,6 +203,9 @@
         flex-direction: column;
         gap: 5%;
     }
+    footer{
+        height: min-content;
+    }
 }
 
 @media screen and (min-width: $breakpointCell) and (max-width: $breakpointTablet) {
